@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.btn {
+  @apply px-3 py-1 rounded-xl border border-slate-300 bg-white text-sm hover:bg-slate-100 dark:border-slate-600 dark:bg-slate-700 dark:hover:bg-slate-600;
+}
+.btn-primary {
+  @apply px-4 py-2 rounded-xl bg-slate-900 text-white hover:bg-black;
+}
+.btn-danger {
+  @apply px-3 py-1 rounded-xl border border-rose-300 bg-rose-50 text-rose-800 hover:bg-rose-100;
+}
+.inp {
+  @apply px-2 py-1 rounded-lg border border-slate-300 bg-white text-sm dark:border-slate-600 dark:bg-slate-700;
+}
+.lbl {
+  @apply self-center text-sm;
+}
+.codebox {
+  @apply h-48 w-full rounded-xl border border-slate-300 bg-slate-50 p-2 font-mono text-xs dark:border-slate-600 dark:bg-slate-900;
+}
