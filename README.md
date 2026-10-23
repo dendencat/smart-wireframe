@@ -108,3 +108,9 @@ npm run build
 ## ライセンス
 
 Apache License 2.0。条件は [LICENSE](LICENSE) を見てください。
+
+## Node.js security update — 2026-10-22
+
+Version 0.1.1 selects Node.js 22.23.4 for development/build tooling. npm installs reject Node.js versions below the fixed patch in the supported 22, 24, and 26 release lines. See the [official October 2026 security release](https://nodejs.org/en/blog/vulnerability/october-2026-security-releases). This configuration update requires rebuilding/restarting any Node.js deployment; it does not verify the runtime of an existing deployment. Dependency declarations and existing lockfile resolutions are unchanged. Verification results and any limitations are recorded below.
+
+Verified on Node.js 22.23.4: `npm ci --ignore-scripts`, all 8 tests, and the production build passed. Existing deployed runtimes were not verified.
